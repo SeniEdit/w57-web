@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<div class="form-settings">
+  {{responses | json}}
+  <input type="text" name="message" #message>
+  <button (click)="sendMsg(message.value)" type="button" name="button">Send message</button>
+  <button *ngIf="loading === false" (click)="logOut()" type="button" name="button">Uitloggen</button>
+  <span *ngIf="loading === true">Uitloggen...</span>
+</div>

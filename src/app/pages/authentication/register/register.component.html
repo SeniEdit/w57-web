@@ -1,0 +1,30 @@
+<div class="card">
+  <h1>{{title}}</h1>
+  <div class="form">
+    <form #loginForm="ngForm" (ngSubmit)="onRegister(firstName.value, lastName.value, email.value, password.value)">
+      <div class="form-group">
+        <label for="firstName">Voornaam</label>
+        <input type="text" name="firstName" value="" placeholder="Voornaam" #firstName>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Achternaam</label>
+        <input type="text" name="lastName" value="" placeholder="Achternaam" #lastName>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="email" value="" placeholder="Email" #email>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Wachtwoord</label>
+        <input type="password" name="password" value="" placeholder="Wachtwoord" #password>
+      </div>
+
+      <button type="submit" name="button">Registreren</button>
+    </form>
+  </div>
+
+  <span>Of <span routerLink="/login" style="font-weight: bold">login</span> als je al een account hebt.</span>
+</div>

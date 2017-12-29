@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 64px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #d3d3d3;
+}
+
+.navtab {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}

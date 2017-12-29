@@ -1,0 +1,28 @@
+.task {
+  width: 100%;
+  flex-direction: row;
+  border: 1px solid black;
+  margin: 10px auto;
+  display: flex;
+}
+
+.primary-content {
+  padding: 10px;
+  flex: 0.6;
+  flex-direction: column;
+}
+
+.primary-content > h4 {
+  margin: 0;
+}
+
+.secondary-content {
+  padding: 10px;
+  flex: 0.4;
+  flex-direction: column;
+}
+
+.secondary-content {
+  right: 5px;
+  position: absolute;
+}

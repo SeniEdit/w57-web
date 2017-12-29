@@ -1,0 +1,25 @@
+<div class="card">
+  <h1>{{title}}</h1>
+  <div class="form">
+    <form #loginForm="ngForm" (ngSubmit)="onLogin(email.value, password.value, code.value)">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="email" value="" placeholder="Email" #email>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Wachtwoord</label>
+        <input type="password" name="password" value="" placeholder="Wachtwoord" #password>
+      </div>
+
+      <div class="form-group">
+        <label for="code">Huiscode</label>
+        <input type="number" name="code" value="" placeholder="Huiscode" #code>
+      </div>
+
+      <button type="submit" name="button">Login</button>
+    </form>
+  </div>
+
+  <span>Of <span routerLink="/register" style="font-weight: bold">registreer</span> je voor W57-web</span>
+</div>

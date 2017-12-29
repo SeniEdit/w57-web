@@ -1,0 +1,10 @@
+<div class="task" *ngIf="hidden === false">
+  <div class="primary-content">
+    <h4>{{task.title}}</h4>
+    <p>{{task.desc}}</p>
+  </div>
+  <div class="secondary-content">
+    <i class="material-icons confirm" (click)="approveTask()">done</i>
+    <i class="material-icons reject" (click)="rejectTask()">clear</i>
+  </div>
+</div>
